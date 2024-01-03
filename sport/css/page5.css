@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.page5 {
+  position: absolute;
+  top: 460%;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.page5-head {
+  position: relative;
+  width: 400px;
+  height: 80px;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.plan-container {
+  position: absolute;
+  width: 80%;
+  height: 400px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+  color: white;
+}
+.plan-container .plans {
+  position: relative;
+  width: 31%;
+  height: 100%;
+  background-color: rgb(5, 9, 12);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.plan-container .plans:hover {
+  box-shadow: inset 0 0 5px white,inset 0 0 5px red, 0 0 5px #ff9b00;
+  transform: scale(1.02);
+}
+.plan-head {
+  position: relative;
+  top: 0%;
+  left: 20px;
+  transform: translate(0, -10%);
+}
+.plan-head hr {
+  position: relative;
+  text-align: center;
+  width: 250px;
+  margin-top: 20px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.plan-head h3 {
+  position: relative;
+  margin-bottom: 20px;
+}
+.plan-benifit {
+  position: relative;
+  top: -20px;
+}
+.plan-benifit div {
+  position: relative;
+  display: flex;
+  margin-bottom: 10px;
+}
+.plan-benifit div img {
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid #ff9b00;
+}
+.plan-benifit div p {
+  margin-left: 10px;
+}
+.plans button{
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 200px;
+    height: 40px;
+    border: 2px solid #ff9b00;
+    background-color: transparent;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+.plans button:hover{
+    background-color: #ff9b00;
+    box-shadow: 0 0 10px white;
+    letter-spacing: 1px;
+}

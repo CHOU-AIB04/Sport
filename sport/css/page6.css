@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.page6{
+    position: absolute;
+    left: 0px;
+    top: 600%;
+    width: 100%;
+    height: 60%;
+    background-color: rgb(21, 55, 63);
+    display: flex;
+}
+.review,.comma{
+    position: relative;
+    left: 10%;
+}
+.comma{
+    position: relative;
+    top: -30%;
+    color: #FFA400;
+    font-size: 210px;
+    font-weight: bold;
+}
+.review {
+    position: relative;
+    width: 600px;
+    height: 100%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+}
+.client{
+    position: relative;
+    width: 200px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.pic-client{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.pic-client:hover{
+    transform: scale(1.05);
+}
+.pic-client img{
+    position: absolute;
+    width: 100%;
+}
+.client-name{
+    color: gray;
+}

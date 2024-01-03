@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(17, 27, 36);
+}
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/*-------------------------------begin header part-------------------------*/
+.header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(17, 27, 36);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+}
+.header img {
+  cursor: pointer;
+}
+.header ul {
+  position: relative;
+  display: flex;
+  list-style: none;
+}
+.header ul li {
+  position: relative;
+  display: inline;
+  margin-left: 40px;
+}
+.header ul li a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.5px;
+}
+.header ul li::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  border-bottom: 2px solid orange;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.header ul li:hover::after {
+  width: 100%;
+}
+.join {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: orange;
+  color: white;
+  transition: 0.5s;
+  font-weight: bold;
+  cursor: pointer;
+}
+.join:hover  {
+  background-color: white;
+  color: orange;
+  transform: scale(1.01);
+  box-shadow: 0 0 20px orange;
+  border: 1px solid orange;
+}
+
+/*-------------------------------end header part-------------------------*/
+
+/*-------------------------------begin section part-------------------------*/
+section {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(0%, -50%);
+  width: 50%;
+  height: 400px;
+}
+section h2 {
+  color: orange;
+}
+section span {
+  font-size: 90px;
+  font-weight: bold;
+  color: white;
+}
+section span span {
+  color: orange;
+}
+section p {
+  color: white;
+}
+.start {
+  position: relative;
+  top: 20px;
+  width: 120px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: orange;
+  transition: 0.5s;
+}
+.start:hover {
+  background-color: white;
+  color: orange;
+  box-shadow: 0 0 20px orange;
+  transform: scale(1.001);
+  border: 1px solid orange;
+}
+
+/*-------------------------------end section part-------------------------*/
+
+/*-------------------------------begin img part-------------------------*/
+.picture {
+  position: absolute;
+  right: 10%;
+  top: 15%;
+  width: 25%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.picture:hover{
+    top: 14%;
+}
+.effect p {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%);
+  color: rgba(128, 128, 128, 0.226);
+  font-size: 150px;
+  font-weight: bold;
+  z-index: -1;
+  letter-spacing: 2px;
+}
+.effect div{
+    position: absolute;
+    right: 11%;
+    top: 20%;
+    width: 280px;
+    height: 320px;
+    border-radius: 50%;
+    border: 40px solid rgba(255, 166, 0, 0.192);
+    z-index: -1;
+
+}
+.cercle1{
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 166, 0, 0.082);
+    border-radius: 50%;
+    box-shadow: 0 0 20px 60px rgba(255, 166, 0, 0.082);
+    z-index: -1;
+}
+.cercle2{
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 166, 0, 0.082);
+    border-radius: 50%;
+    box-shadow: 0 0 20px 60px rgba(255, 166, 0, 0.082);
+    z-index: -1;
+}
+
+/*-------------------------------end img part-------------------------*/
+

@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.page7{
+    position: absolute;
+    top: 635%;
+    width: 100%;
+    height: 60%;
+}
+.club-info{
+    position: absolute;
+    top: 9%;
+    left: 10%;
+    width: 30%;
+    height:200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+.footer-logo{
+    width: 200px;
+}
+.social-container{
+    position: relative;
+    width: 150px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.social{
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid #FFA400;
+    transition: 0.5s;
+    
+}
+.social:hover{
+   transform: scale(1.1);
+   border-color: #FFA400;
+   box-shadow: 0 0 10px rgb(105, 69, 69);
+
+}
+.details{
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    transform: translate(-90%,-10%);
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.details div{
+    position: relative;
+    width: auto;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+}
+.details div ul{
+    list-style: none;
+    width: auto;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+.about-ul{
+    height: 80px !important;
+}
+.details div ul li a {
+    text-decoration: none;
+    color: white;
+}
+.details div ul li{
+    position: relative;
+    cursor: pointer;    
+}
+.details div ul li::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 0%;
+    border-bottom: 2px solid white;
+    transition: 0.5s;
+    
+}
+.details div ul li:hover::after{
+    width: 100%;
+}
+.copyright{
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+    color: white;
+    font-size: 12px;
+}
